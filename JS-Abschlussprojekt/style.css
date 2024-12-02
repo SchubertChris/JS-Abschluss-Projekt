@@ -129,23 +129,18 @@ main {
   }
 }
 
-.--Project1:hover {
-  animation: left-tomiddle 2s both ease-out;
-  z-index: 1001;
-}
-.--Project2:hover {
+
+.--Project1:hover,
+.--Project2:hover,
+.--Project3:hover {
   background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
   z-index: 1001;
-  border-radius: 50%;
+  border-radius: 50% !important;
   text-align: center;
   transform: scale(1.2);
   box-shadow: 1px 1px 1px 10px solid rgb(96, 255, 242);
   box-shadow: 1px 1px 10px rgb(96, 255, 242);
   transition: 2s;
-}
-.--Project3:hover {
-  z-index: 1001;
-  animation: right-tomiddle 2s both ease-out;
 }
 
 .--Project1 a:hover,
@@ -155,34 +150,6 @@ main {
   text-decoration: overline 1px gold;
 }
 
-/* Projekt L Keyframe */
-@keyframes left-tomiddle {
-  0% {
-  }
-  70% {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-  }
-  100% {
-    transform: scale(1.2);
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
-    box-shadow: 1px 1px 10px rgb(96, 255, 242);
-    transform: translateX(30%);
-  }
-}
-/* Projekt R Keyframe */
-@keyframes right-tomiddle {
-  0% {
-  }
-  70% {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-  }
-  100% {
-    transform: scale(1.2);
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
-    transform: translateX(-30%);
-    box-shadow: 1px 1px 10px rgb(96, 255, 242);
-  }
-}
 
 /* THATS ME SECTION */
 
