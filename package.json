@@ -11,5 +11,12 @@
     "test": "jest",
     "lint": "eslint .",
     "deploy": "gh-pages -d dist"
-  }
+  },
+  "name": "project-javascript-dci---kopie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
