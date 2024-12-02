@@ -73,6 +73,7 @@ body {
   min-height: 100vh;
   letter-spacing: 0.15rem;
   line-height: 1.4rem;
+  overflow-x: hidden;
   color: var(--Text-color-lightest);
   background-image: radial-gradient(
     circle,
@@ -80,7 +81,6 @@ body {
     var(--BG-dark)
   );
 }
-
 /* Header Styles */
 header {
   width: 100%;
@@ -164,7 +164,7 @@ nav ul li ul li:hover {
   transition: 1s;
 }
 
-/* Anchor Styles */
+/* A Styles */
 a {
   letter-spacing: 0.3rem;
   color: var(--Text-color-lightest);
@@ -208,7 +208,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background-color: var(--DarkerBG-dark);
 }
-
+/* Social Media btns */
 #SM-btn-INS,
 #SM-btn-GH,
 #SM-btn-FB {
@@ -349,7 +349,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 0.7rem;
   }
 }
-
+/* Medium */
 @media (min-width: 769px) and (max-width: 1200px) {
   header img {
     width: 100px;
@@ -458,7 +458,7 @@ h1 {
     justify-content: flex-end;
   }
   #projects {
-  flex-direction: row;
+    flex-direction: row;
   }
   .skills div {
     justify-content: space-evenly;
