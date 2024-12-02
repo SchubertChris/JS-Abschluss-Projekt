@@ -52,7 +52,10 @@ Eine klare und intuitive Struktur:
 ## 📂 **Projektstruktur**
 
         📂 JS-Abschlussprojekt  
+        ├── 📄 package-lock.json  
+        ├── 📄 package.json  
         ├── 📄 .gitignore  
+        ├── 📄 index.html  
         ├── 📁 JS-Abschlussprojekt  
         │   ├── 📁 assets  
         │   │   ├── 📁 fonts  
@@ -69,14 +72,10 @@ Eine klare und intuitive Struktur:
         │   │   ├── 📁 assets  
         │   ├── 📁 to-do  
         │   │   ├── 📁 assets  
-        ├── 📄 README.md  
-        ├── 📄 index.html  
         ├── 📁 node_modules  
         │   ├── 📁 .bin  
         │   ├── 📁 readline-sync  
-        ├── 📄 package-lock.json  
-        ├── 📄 package.json  
-        ├── 📄 readme.md
+        ├── 📄 README.md  
 
 
  
