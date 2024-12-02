@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Chris Schubert" />
+    <meta
+      name="discription"
+      content="Das ist mein Abschlussprojekt für das JavaScript-Modul, hier Stelle ich mich vor und zeige 3 kleine Projekte die ich programmiert habe."
+    />
+    <title>JavaScript - Abschluss Projekt</title>
+    <link rel="stylesheet" href="../root.css" />
+    <link rel="stylesheet" href="./taschenrechner.css" />
+    <script
+      src="https://kit.fontawesome.com/7bb860d4a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 id="logo">CS</h1>
+      <button style="display: none" id="hamburger-menu" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul>
+          <li>
+            <a href="#me"
+              ><i id="nav-icons" class="fas fa-user"></i> That's me</a
+            >
+          </li>
+          <li>
+            <a href="#projects"
+              ><i id="nav-icons" class="fas fa-project-diagram"></i> Projects</a
+            >
+            <!-- Download einbinden (Gesamtes Project als Zip Hinterlegen) -->
+            <ul>
+              <li>
+                <a href="../to-do/to-do.html"
+                  ><i class="fas fa-tasks"></i> To-Do Liste</a
+                >
+              </li>
+              <li>
+                <a href="../tiktactoe/tiktaktoe.html"
+                  ><i class="fas fa-gamepad"></i> Tik Tak Toe</a
+                >
+              </li>
+              <li>
+                <a href="./taschenrechner.html"
+                  ><i class="fas fa-calculator"></i> Taschenrechner</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#kontakt"
+              ><i id="nav-icons" class="fas fa-envelope"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="säulen-links">
+        <div class="Säule0-L"></div>
+        <div class="Säule1-L"></div>
+        <div class="Säule2-L"></div>
+        <div class="Säule3-L"></div>
+        <div class="Säule4-L"></div>
+        <div class="Säule5-L"></div>
+        <div class="Säule6-L"></div>
+        <div class="Säule7-L"></div>
+        <div class="Säule8-L"></div>
+        <div class="Säule9-L"></div>
+      </div>
+      <!-- ----------------------------------------------- -->
+      <div class="Taschenrechner" id="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+          <button class="button" data-value="C">C</button>
+          <button class="button" data-value="/">/</button>
+          <button class="button" data-value="*">*</button>
+          <button class="button" data-value="DEL">
+            <i class="fas fa-backspace" id="backspace"></i>
+          </button>
+          <button class="button" data-value="7">7</button>
+          <button class="button" data-value="8">8</button>
+          <button class="button" data-value="9">9</button>
+          <button class="button" data-value="%">%</button>
+          <button class="button" data-value="4">4</button>
+          <button class="button" data-value="5">5</button>
+          <button class="button" data-value="6">6</button>
+          <button class="button" data-value="-">-</button>
+          <button class="button" data-value="1">1</button>
+          <button class="button" data-value="2">2</button>
+          <button class="button" data-value="3">3</button>
+          <button class="button" data-value="+">+</button>
+          <button class="button" data-value="0" style="grid-column: span 2">
+            0
+          </button>
+          <button class="button" data-value=".">.</button>
+          <button class="button" data-value="=" id="equals">=</button>
+        </div>
+      </div>
+      <!-- ----------------------------------------------- -->
+      <div class="säulen-rechts">
+        <div class="Säule0-R"></div>
+        <div class="Säule1-R"></div>
+        <div class="Säule2-R"></div>
+        <div class="Säule3-R"></div>
+        <div class="Säule4-R"></div>
+        <div class="Säule5-R"></div>
+        <div class="Säule6-R"></div>
+        <div class="Säule7-R"></div>
+        <div class="Säule8-R"></div>
+        <div class="Säule9-R"></div>
+      </div>
+      <section class="Download">
+        <a href="./assets/Taschenrechner-Zip.zip" download>
+          <button id="download-btn">
+        <i class="fas fa-download"></i> Download
+          </button>
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="icons">
+        <a href="https://www.instagram.com" target="_blank"
+          ><i id="SM-btn-INS" class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.github.com" target="_blank"
+          ><i id="SM-btn-GH" class="fab fa-github"></i
+        ></a>
+        <a href="https://www.facebook.com" target="_blank"
+          ><i id="SM-btn-FB" class="fab fa-facebook"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <p>© 2021 Chris Schubert</p>
+      </div>
+    </footer>
+
+    <script src="./taschenrechner.js"></script>
+  </body>
+</html>
