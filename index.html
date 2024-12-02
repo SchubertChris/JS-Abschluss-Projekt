@@ -119,14 +119,13 @@
           </article>
         </div>
       </section>
-      <hr style="margin-bottom: 100px" />
       <!-- Das bin ich -->
       <section id="me" class="thats-me">
         <div class="thats-me-div">
           <img
             id="meIMG"
-            src="./JS-Abschlussprojekt/assets/images/BildVMirOhneBG.png"
-            alt="Ein Bild von mir, ohne Hintergrund (Chris Schubert)"
+            src="#"
+            alt="Banner?"
           />
         </div>
         <div class="thats-me-div me-text">
@@ -192,9 +191,6 @@
         </div>
       </section>
       <section id="kontakt" class="kontakt-section">
-        <div class="logo-contact">
-          <img src="./JS-Abschlussprojekt/assets/images/cs gold.png" alt="Logo CS" />
-        </div>
         <form class="kontakt-form" action="https://127.0.0.1:5500/JS-Abschlussprojekt/danke.html" 
         method="POST">
           <h2>Kontakt</h2>
@@ -204,7 +200,10 @@
               type="text"
               id="name"
               name="name"
-              placeholder="Dein Name"
+              placeholder="Name"
+              min-length="2"
+              maxlength="20"
+              pattern="[A-Za-z\s]+"
               required
             />
           </div>
@@ -214,7 +213,10 @@
               type="text"
               id="nachname"
               name="nachname"
-              placeholder="Dein Nachname"
+              placeholder="Nachname"
+              min-length="2"
+              maxlength="20"
+              pattern="[A-Za-z\s]+"
               required
             />
           </div>
@@ -224,8 +226,10 @@
               type="text"
               id="Vorwahl"
               name="Vorwahl:"
+              min-length="5"
               placeholder="Mobil"
-            />
+              required
+              />
             <select id="Telefon" name="Telefon" required>
               <option value="+49">+49 (Deutschland)</option>
               <option value="+33">+33 (Frankreich)</option>
@@ -247,6 +251,7 @@
               id="email"
               name="email"
               placeholder="Deine E-Mail"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
             />
           </div>
@@ -257,6 +262,8 @@
               id="betreff"
               name="betreff"
               placeholder="Betreff"
+              min-length="5"
+              max="30"
               required
             />
           </div>
@@ -268,6 +275,9 @@
               rows="5"
               placeholder="Deine Nachricht"
               required
+              pattern="[A-Za-z\s]+[0-9]+^[^<>]*$"
+              minlength="25"
+              maxlength="500"
             ></textarea>
           </div>
           <button type="submit" class="btn-senden">Senden</button>
@@ -282,13 +292,18 @@
             Potsdam, Deutschland
           </p>
           <p>
-            <i class="fas fa-envelope"></i>
+            <i  class="fas fa-envelope"></i>
             <a
               href="mailto:chris.schubert@dci-student.org?subject=Betreff&body=Hallo Chris,"
               >chris.schubert@dci-student.org</a
             >
           </p>
         </div>
+        <img
+        id="meIMG"
+        src="./JS-Abschlussprojekt/assets/images/BildVMirOhneBG.png"
+        alt="Ein Bild von mir, ohne Hintergrund (Chris Schubert)"
+      />
       </section>
       <section class="animated-logo">
         <img src="./JS-Abschlussprojekt/assets/images/imageonline/00.png" alt="Raster Logo geplittet" />
@@ -301,6 +316,9 @@
         <img src="./JS-Abschlussprojekt/assets/images/imageonline/21.png" alt="Raster Logo geplittet" />
         <img src="./JS-Abschlussprojekt/assets/images/imageonline/22.png" alt="Raster Logo geplittet" />
       </section>
+        <p style="margin-left: 2rem;
+        margin-bottom: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For the better business ..</p>
     </main>
 
     <!-- FOOTER -->

@@ -129,6 +129,12 @@ main {
   }
 }
 
+#projects{
+  background: url(../JS-Abschlussprojekt/assets/images/hintergrund.jpg) no-repeat center center/cover;
+  border-top: 1px solid rgba(218, 165, 32, 0.603);
+  border-bottom: 1px solid rgba(218, 165, 32, 0.603);
+}
+
 
 .--Project1:hover,
 .--Project2:hover,
@@ -184,13 +190,8 @@ main {
   cursor: pointer;
   text-align: center;
   z-index: 900;
-  img {
-    opacity: 0.7;
-    &:hover {
-      opacity: 0.9;
-    }
   }
-}
+
 
 /* Grid */
 
@@ -202,6 +203,23 @@ main {
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+#me{
+  background: url(../JS-Abschlussprojekt/assets/images/hintergrund-light.jpg) no-repeat center center/cover;
+  position: relative;
+  box-shadow: inset 0 0 600px 50px rgba(0, 0, 0, 0.5);
+}
+#me::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark shimmer */
+  pointer-events: none;
 }
 
 .skills {
@@ -296,12 +314,21 @@ main {
 }
 
 .kontakt-section {
+  border-bottom: 1px solid rgba(218, 165, 32, 0.515);
+  border-top: 1px solid rgba(218, 165, 32, 0.515);
   height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 600px;
+  margin-bottom: 600px;
   padding: 3rem;
-  border-left: 1px solid var(--Text-accent1);
+  background: url(../JS-Abschlussprojekt/assets/images/hintergrund-red.jpg) no-repeat center center/cover;
+  box-shadow: inset 0 0 600px 50px rgba(0, 0, 0, 0.5);
+  .fa-envelope:hover{
+    -webkit-text-stroke: 1px rgb(22, 22, 22);
+    cursor: pointer;
+  }
 }
 
 .kontakt-form,
@@ -393,6 +420,16 @@ h2 {
 .kontakt-form div input[type="tel"] {
   flex: 1;
 }
+#kontakt img {
+  opacity: 0.5;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      animation: fly-in 2s 1 linear;
+}
+#kontakt img:hover {
+      opacity: 0.7;
+      cursor: pointer;
+}
 
 .btn-senden {
   padding: 0.75rem 1.5rem;
@@ -435,6 +472,10 @@ h2 {
   margin-bottom: 70px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  border: 1px solid rgba(218, 165, 32, 0.603);
+  border-radius: 10px;
+  box-shadow: inset 0 0 600px 50px rgba(0, 0, 0, 0.5);
 }
 
 .animated-logo img:nth-child(1) {
