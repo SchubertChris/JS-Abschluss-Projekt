@@ -68,7 +68,7 @@
 body {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100vw;
   min-height: 100vh;
   letter-spacing: 0.15rem;
@@ -80,6 +80,9 @@ body {
 /* Header Styles */
 header {
   width: 100%;
+  img{
+    display: none;
+  }
 }
 
 header h1 {
@@ -91,6 +94,7 @@ header h1 {
 /* Navigation Styles */
 nav {
   width: 100%;
+  z-index: 999;
   animation: navbarHopIn 2s;
 }
 
@@ -110,6 +114,7 @@ nav ul li {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
+  z-index: 999;
   border: 1px solid rgba(245, 222, 179, 0);
 }
 
@@ -140,10 +145,12 @@ nav ul li:hover ul {
 
 nav ul li ul li {
   width: 100%;
-  border-radius: 10px;
-
-}nav ul li ul li a {
+  border-radius: 10px;  
+  z-index: 999;
+}
+nav ul li ul li a {
   width: 100%;
+  z-index: 999;
   border-radius: 10px;
 }
 

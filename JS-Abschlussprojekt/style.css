@@ -14,35 +14,35 @@ h1 {
 
 @keyframes slide-right-and-left {
   10% {
-    font-family: 'Western-Style', sans-serif;
+    font-family: "Western-Style", sans-serif;
     transform: rotate(10deg);
   }
   20% {
-    font-family: 'Nav-Style', monospace;
+    font-family: "Nav-Style", monospace;
     transform: scale(1.1);
   }
   30% {
-    font-family: 'Kelten-Style', serif;
+    font-family: "Kelten-Style", serif;
     transform: skewX(10deg);
   }
   40% {
-    font-family: 'Azonix-Style', serif;
+    font-family: "Azonix-Style", serif;
     transform: translateY(-10px);
   }
   60% {
-    font-family: 'Degital-Style', sans-serif;
+    font-family: "Degital-Style", sans-serif;
     transform: rotate(-10deg);
   }
   70% {
-    font-family: 'Serif-Style', sans-serif;
+    font-family: "Serif-Style", sans-serif;
     transform: scale(0.9);
   }
   80% {
-    font-family: 'Impact', sans-serif;
+    font-family: "Impact", sans-serif;
     transform: skewY(10deg);
   }
   90% {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
   }
   0% {
     transform: translateX(30px);
@@ -126,7 +126,6 @@ main {
   }
 }
 
-
 .--Project1:hover {
   animation: left-tomiddle 2s both ease-out;
   z-index: 1001;
@@ -137,15 +136,14 @@ main {
   border-radius: 50%;
   text-align: center;
   transform: scale(1.2);
-    box-shadow: 1px 1px 1px 10px solid rgb(96, 255, 242);
-    box-shadow: 1px 1px 10px rgb(96, 255, 242);
-    transition: 2s;
+  box-shadow: 1px 1px 1px 10px solid rgb(96, 255, 242);
+  box-shadow: 1px 1px 10px rgb(96, 255, 242);
+  transition: 2s;
 }
 .--Project3:hover {
   z-index: 1001;
   animation: right-tomiddle 2s both ease-out;
 }
-
 
 /* Projekt L Keyframe */
 @keyframes left-tomiddle {
@@ -208,14 +206,16 @@ main {
   padding: 2rem 5rem 2rem 0rem;
   cursor: pointer;
   text-align: center;
-  img{
+  z-index: 900;
+  img {
     opacity: 0.7;
-  &:hover{
-    opacity: .9;
+    &:hover {
+      opacity: 0.9;
+    }
   }
-}}
+}
 
-  /* Grid */
+/* Grid */
 
 .thats-me {
   max-width: 100vw;
@@ -225,14 +225,20 @@ main {
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  }
-  
-  .skills { grid-area: 2 / 5 / 12 / 6; }
-  .me { grid-area: 2 / 1 / 13 / 2; }
-  .me-text { grid-area: 10 / 2 / 13 / 5; }
-  .dynamic-i { grid-area: 2 / 2 / 10 / 5; }
+}
 
-
+.skills {
+  grid-area: 2 / 5 / 12 / 6;
+}
+.me {
+  grid-area: 2 / 1 / 13 / 2;
+}
+.me-text {
+  grid-area: 10 / 2 / 13 / 5;
+}
+.dynamic-i {
+  grid-area: 2 / 2 / 10 / 5;
+}
 
 .skill-balken-js,
 .skill-balken-react,
@@ -255,7 +261,7 @@ main {
   border: 1px solid rgba(245, 222, 179, 0);
   border-bottom: 1px solid var(--Text-accent1);
   outline: 1px solid rgb(245, 222, 179, 0);
-  i{
+  i {
     color: goldenrod;
     display: block;
   }
@@ -266,8 +272,8 @@ main {
     transition: 1s;
   }
   &:active {
-  box-shadow: 1px 1px 10px rgb(96, 255, 242);
-  transition: 0;
+    box-shadow: 1px 1px 10px rgb(96, 255, 242);
+    transition: 0;
   }
 }
 
@@ -282,11 +288,9 @@ main {
 .skill-balken-ta span,
 .skill-balken-bw span,
 .skill-balken-ch span {
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: bold;
 }
-
-
 
 .skill-balken-js:active i,
 .skill-balken-react:active i,
@@ -308,9 +312,9 @@ main {
 .skill-balken-team span:active i,
 .skill-balken-tstrategie span:active i,
 .skill-balken-ta span:active i,
-.skill-balken-bw span:active i
-{
-  text-shadow: 0 0 10px rgba(96, 255, 242, 0.5), 0 0 20px rgba(96, 255, 242, 0.5), 0 0 30px rgba(96, 255, 242, 0.5);
+.skill-balken-bw span:active i {
+  text-shadow: 0 0 10px rgba(96, 255, 242, 0.5),
+    0 0 20px rgba(96, 255, 242, 0.5), 0 0 30px rgba(96, 255, 242, 0.5);
 }
 
 .kontakt-section {
@@ -322,123 +326,314 @@ main {
   border-left: 1px solid var(--Text-accent1);
 }
 
-.kontakt-form, .logo-contact, .abspann {
+.kontakt-form,
+.logo-contact,
+.abspann {
   width: 30%;
-  padding: 5rem;}
+  padding: 5rem;
+}
 
-  h2{
-    width: 300px;
-    font-family: Azonix-Style;
-    animation: tilt-and-fall 3s both ease-out;
+h2 {
+  width: 300px;
+  font-family: Azonix-Style;
+  animation: tilt-and-fall 3s both ease-out;
+}
+
+@keyframes tilt-and-fall {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
   }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(180deg);
+    text-shadow: 1px 1px 10px rgb(96, 255, 242);
+    transform: translateY(10px);
+  }
+  100% {
+    transform: rotate(-5deg);
+    text-shadow: 1px 1px 10px rgb(96, 255, 242);
+  }
+}
 
-  @keyframes tilt-and-fall {
-    0% {
-      transform: rotate(0deg);
-      opacity: 0;
+.logo-contact img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.kontakt-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kontakt-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakt-form input,
+.kontakt-form select,
+.kontakt-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  color: wheat;
+  border-bottom: 1px solid #ccc;
+  outline: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Azonix-Style;
+  &:hover {
+    border-bottom: 1px solid var(--Text-accent1);
+  }
+  &:focus {
+    border-bottom: 1px solid var(--Text-accent1);
+    box-shadow: 1px 1px 10px rgb(96, 255, 242);
+    transition: 0.1s;
+  }
+  option {
+    color: black;
+  }
+}
+
+.kontakt-form select {
+  width: auto;
+  margin-right: 15rem;
+}
+
+.kontakt-form div {
+  display: flex;
+  align-items: left;
+}
+
+.kontakt-form div input[type="tel"] {
+  flex: 1;
+}
+
+.btn-senden {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--Text-accent1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  font-weight: bold;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--Text-accent1);
+    border-bottom: 1px solid var(--Text-accent1);
+  }
+}
+
+.abspann {
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 2rem;
+  p {
+    padding: 1rem;
+  }
+  i:hover {
+    color: var(--Text-accent1);
+  }
+  a {
+    font-size: 0.8rem;
+    &:hover {
+      color: var(--Text-accent1);
     }
-    50% {
-      transform: rotate(90deg);
-    }
-    75% {
-      transform: rotate(180deg);
-      text-shadow: 1px 1px 10px rgb(96, 255, 242);
-      transform: translateY(10px);
-    }
-    100% {
-      transform: rotate(-5deg);
-      text-shadow: 1px 1px 10px rgb(96, 255, 242);
+  }
+}
+
+/* ---------------------MEDIA-QUERRY's ------------------------------------*/
+
+/* Extra kleine Geräte (Hochformat-Telefone, weniger als 768px) */
+@media (max-width: 768px) {
+ #meIMG{
+  display: none;
+ }
+  header img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 6%;
+    left: 20%;
+    &::after{
+      content: "Chris Schubert";
+      font-size: 1rem;
+      color: var(--Text-accent1);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
   
-  .logo-contact img {
+  nav {
+    animation: none;
+    z-index: 1111;
+  }
+  #hamburger-menu {
+    z-index: 1010;
+    position: fixed;
+    right: 5%;
+    top: 10%;
     width: 100px;
     height: 100px;
-    margin-bottom: 1rem;
-  }
-
-  .kontakt-form {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .kontakt-form .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .kontakt-form input,
-  .kontakt-form select,
-  .kontakt-form textarea {
-    width: 100%;
-    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: #607dff00;
     border: none;
-    color: wheat;
-    border-bottom: 1px solid #ccc;
-    outline: rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0);
-    font-family: Azonix-Style;
-    &:hover{
-      border-bottom: 1px solid var(--Text-accent1);
+    color: var(--Text-accent1);
+    &:hover {
+      cursor: pointer;
     }
-    &:focus {
-      border-bottom: 1px solid var(--Text-accent1);
-      box-shadow: 1px 1px 10px rgb(96, 255, 242);
-      transition: .1s;
-    }
-    option{
-      color: black;
+    i {
+      z-index: 1000;
     }
   }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Navigation außerhalb des Bildes */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Hintergrund der Navigation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    li {
+      position: relative;
+      width: 100%;
+    }
+    #sec-ul {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      position: relative;
+      width: 100%;
+      height: 1rem;
+    }
+  }
+  nav ul.open {
+      z-index: 1005;
+      right: 0; /* Navigation ins Bild schieben */
+  }
 
-  .kontakt-form select {
-    width: auto;
-    margin-right: 15rem;
+  nav ul li {
+    margin: 20px 0;
+  }
 }
 
-  .kontakt-form div {
-    display: flex;
-    align-items: left;
+  .Project-Bar {
+    flex-direction: column;
+    padding: 2rem;
   }
 
-  .kontakt-form div input[type="tel"] {
-    flex: 1;
+  .Project-inner img {
+    height: auto;
   }
 
-  .btn-senden {
-    padding: 0.75rem 1.5rem;
-    background-color: var(--Text-accent1);
-    color: #fff;
+  
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  nav {
+    animation: none;
+    z-index: 1111;
+  }
+  #hamburger-menu {
+    z-index: 1010;
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    background-color: #607dff00;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    font-weight: bold;
+    color: var(--Text-accent1);
     &:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: var(--Text-accent1);
-      border-bottom: 1px solid var(--Text-accent1);
+      cursor: pointer;
     }
+    i {
+      z-index: 1000;
+    }
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Navigation außerhalb des Bildes */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Hintergrund der Navigation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    li {
+      position: relative;
+      width: 100%;
+    }
+    #sec-ul {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      position: relative;
+      width: 100%;
+      height: 1rem;
+    }
+  }
+  nav ul.open {
+      z-index: 1005;
+      right: 0; /* Navigation ins Bild schieben */
   }
 
-  .abspann {
-    text-align: center;
-    margin-top: 2rem;
-    line-height: 2rem;
-    p{
-      padding: 1rem;
-    }
-    i:hover{
-      color: var(--Text-accent1);
-    }
-    a{
-      font-size: .8rem;
-      &:hover{
-        color: var(--Text-accent1);
-      }
-    }
+  nav ul li {
+    margin: 20px 0;
   }
+}
+
+#projects{
+  margin-bottom: 550px;
+}
+
+.Project-Bar {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+
+.skills div {
+  flex-direction: row;
+}
+h1 {
+  display: none;
+}
+
+
+/* Große Geräte (Desktops, 1200px und mehr) */
+@media (min-width: 1201px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  
+
+  .Project-Bar {
+    padding: 5rem;
+  }
+
+  .skills div {
+    justify-content: space-evenly;
+  }
+}

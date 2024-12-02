@@ -19,8 +19,11 @@
   <body>
     <!-- HEADER -->
     <header>
+      <a href="index.html">
+        <img src="./assets/images/cs gold.png" alt="Logo CS">
+      </a>
       <h1 id="logo">CS</h1>
-      <button style="display: none" id="hamburger-menu" aria-label="Menu">
+      <button id="hamburger-menu" aria-label="Menu" class="--active">
         <i class="fas fa-bars"></i>
       </button>
       <nav>
@@ -31,13 +34,15 @@
             >
           </li>
           <li>
-            <a href="#projects"
+            <a class="sec-ul" href="#projects"
               ><i id="nav-icons" class="fas fa-project-diagram"></i> Projects</a
             >
             <!-- Download einbinden (Gesamtes Project als Zip Hinterlegen) -->
-            <ul>
+            <ul id="sec-ul">
               <li>
-                <a href="./to-do/to-do.html"><i class="fas fa-tasks"></i> To-Do Liste</a>
+                <a href="./to-do/to-do.html"
+                  ><i class="fas fa-tasks"></i> To-Do Liste</a
+                >
               </li>
               <li>
                 <a href="./tiktactoe/tiktaktoe.html"
@@ -113,7 +118,7 @@
       <section id="me" class="thats-me">
         <div class="thats-me-div">
           <img
-            id="me"
+            id="meIMG"
             src="./assets/images/BildVMirOhneBG.png"
             alt="Ein Bild von mir, ohne Hintergrund (Chris Schubert)"
           />
@@ -122,19 +127,20 @@
           <div id="dynamic-in" class="dynamic-i">
             <!-- Beispiel: -->
             <img
-              style="width: 800px"
+              style="width: 100px"
               src="./assets/images/cs gold.png"
               alt=""
             />
           </div>
+          
           <p>
             Herzlich Willkommen auf meiner Seite, mein Name ist Chris Schubert
             und ich bin am 07.06.1994 geboren und lebe heute im schönes Potsdam.
             Ich liebe es den ganzen Tag am rechner zu sitzen, probleme zu lösen
             und mich damit gleichzeitig weiterzuentwickeln. Wenn ich mal keine
             Lust auf's Programmieren habe, dann bleibt es Technisch und ich
-            fange an Charts zu analysieren. <br> Mit Kryptos, Finanzen und Gaming
-            kannst du mich immer catchen!
+            fange an Charts zu analysieren. <br />
+            Mit Kryptos, Finanzen und Gaming kannst du mich immer catchen!
           </p>
         </div>
         <div class="thats-me-div">
@@ -180,22 +186,16 @@
             <span><i class="fas fa-lock"></i> Blockchain-Wissen</span>
           </div>
           <div class="skill-balken-ch">
-            <span
-              ><i class="fas fa-desktop"></i> Technik Verständnis</span
-            >
+            <span><i class="fas fa-desktop"></i> Technik Verständnis</span>
           </div>
         </div>
       </section>
       <section id="kontakt" class="kontakt-section">
         <div class="logo-contact">
-          <img src="./assets/images/cs gold.png" alt="Logo CS">
+          <img src="./assets/images/cs gold.png" alt="Logo CS" />
         </div>
-        <form
-        class="kontakt-form"
-        action=""
-        method="POST"
-        >
-        <h2>Kontakt</h2>
+        <form class="kontakt-form" action="" method="POST">
+          <h2>Kontakt</h2>
           <div class="form-group">
             <label for="name">Dein Name:</label>
             <input
@@ -218,7 +218,12 @@
           </div>
           <div class="form-group">
             <label for="Vorwahl">Telefon:</label>
-            <input type="text" id="Vorwahl" name="Vorwahl:" placeholder= "Mobil" />
+            <input
+              type="text"
+              id="Vorwahl"
+              name="Vorwahl:"
+              placeholder="Mobil"
+            />
             <select id="Telefon" name="Telefon" required>
               <option value="+49">+49 (Deutschland)</option>
               <option value="+33">+33 (Frankreich)</option>
@@ -276,8 +281,10 @@
           </p>
           <p>
             <i class="fas fa-envelope"></i>
-            <a href="mailto:chris.schubert@dci-student.org?subject=Betreff&body=Hallo Chris,">chris.schubert@dci-student.org</a>
-
+            <a
+              href="mailto:chris.schubert@dci-student.org?subject=Betreff&body=Hallo Chris,"
+              >chris.schubert@dci-student.org</a
+            >
           </p>
         </div>
       </section>

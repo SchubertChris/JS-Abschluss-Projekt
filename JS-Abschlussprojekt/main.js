@@ -7,3 +7,12 @@
 3. Drop-Down-Menü erstellen
   - Drop-Down-Menü mit den Unterkategorien verknüpfen (LINK)
 */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const navMenu = document.querySelector('nav ul');
+
+  hamburgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+});
