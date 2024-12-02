@@ -1,3 +1,73 @@
 @import url(../root.css);
-@import url(../style.css);
-@import url();
+@import url(../calculator/taschenrechner.css);
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.tiktactoe-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: #27272780;
+  border: 1px solid var(--Text-accent1);
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+.cell[data-cell]:hover {
+  background-color: #10101000;
+  color: var(--Text-accent1);
+  border: 2px solid red;
+  z-index: 1001;
+  box-shadow: inset red 0px 0px 10px 0px;
+}
+
+
+.säulen-links{
+  margin: 100px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.säulen-rechts{
+  margin-top: 100px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.cell i.fa-regular.fa-circle {
+  color: orange;
+  &:hover{
+    color: red;
+  }
+}
+
+.cell i.fa-solid.fa-x {
+  color: yellowgreen;
+  &:hover{
+    color: red;
+  }
+}
