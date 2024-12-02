@@ -1,0 +1,36 @@
+@import url(./root.css);
+
+
+.danke-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.danke-container h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.danke-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.danke-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.danke-container a:hover {
+  box-shadow: 0 0 10px var(--Text-accent1);
+  border-radius: 20px;
+}

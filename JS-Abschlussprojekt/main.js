@@ -16,3 +16,4 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu.classList.toggle('open');
   });
 });
+
