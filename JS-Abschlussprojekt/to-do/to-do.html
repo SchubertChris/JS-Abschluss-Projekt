@@ -10,7 +10,7 @@
     />
     <title>JavaScript - Abschluss Projekt</title>
     <link rel="stylesheet" href="../root.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./to-do.css" />
     <script
       src="https://kit.fontawesome.com/7bb860d4a6.js"
       crossorigin="anonymous"
@@ -37,15 +37,17 @@
             <!-- Download einbinden (Gesamtes Project als Zip Hinterlegen) -->
             <ul>
               <li>
-                <a href="./to-do.html"><i class="fas fa-tasks"></i> To-Do Liste</a>
+                <a href="../to-do/to-do.html"
+                  ><i class="fas fa-tasks"></i> To-Do Liste</a
+                >
               </li>
               <li>
-                <a href="../tik-tak-toe/tik-tak-toe.html"
+                <a href="../tiktactoe/tiktaktoe.html"
                   ><i class="fas fa-gamepad"></i> Tik Tak Toe</a
                 >
               </li>
               <li>
-                <a href="../taschenrechner/taschenrechner.html"
+                <a href="./taschenrechner.html"
                   ><i class="fas fa-calculator"></i> Taschenrechner</a
                 >
               </li>
@@ -61,225 +63,59 @@
     </header>
     <!-- MAIN -->
     <main>
-      <!-- Projekt Bar Section -->
-      <section id="projects" class="Project-Bar">
-        <div class="Project --Project1">
-          <article class="Project-inner --Project-inner1">
-            <img
-              src="https://i.ytimg.com/vi/CsO0UJSqaw0/maxresdefault.jpg"
-              alt="To-do Liste - Vorschau"
-            />
-            <h4>To-Do</h4>
-            <p>
-              Eine einfache To-Do Liste, die es ermöglicht Aufgaben
-              hinzuzufügen, zu löschen und zu bearbeiten. <br />
-              Gestalte deinen Tag einfach und strukturiert um immer relaxed zu
-              bleiben.
-            </p>
-          </article>
-        </div>
-        <div class="Project --Project2">
-          <article class="Project-inner --Project-inner2">
-            <img
-              src="https://preview.redd.it/g2moa4cqwh851.png?width=1920&format=png&auto=webp&s=e5beba14b77b8a277460949e6cff49e72b8d4f2b"
-              alt="Taschenrechner - Vorschau"
-            />
-            <h4>Taschenrechner</h4>
-            <p>
-              Ein einfacher Taschenrechner, der es ermöglicht einfache
-              Rechnungen zu berechnen. <br />
-              Egal ob du addieren, subtrahieren, multiplizieren oder dividieren
-              möchtest, dieser Taschenrechner kann es.
-            </p>
-          </article>
-        </div>
-        <div class="Project --Project3">
-          <article class="Project-inner --Project-inner3">
-            <img
-              src="https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU=w240-h480-rw"
-              alt="Tik Tak Toe - Vorschau"
-            />
-            <h4>Tik Tak Toe</h4>
-            <p>
-              Ein einfaches Tik Tak Toe Spiel, das es ermöglicht gegen einen
-              Freund zu spielen. <br />
-              Egal ob du X oder O bist, der Spaß ist garantiert.
-            </p>
-          </article>
-        </div>
-      </section>
-      <hr style="margin-bottom: 100px" />
-      <!-- Das bin ich -->
-      <section id="me" class="thats-me">
-        <div class="thats-me-div">
-          <img
-            id="me"
-            src="../assets/images/BildVMirOhneBG.png"
-            alt="Ein Bild von mir, ohne Hintergrund (Chris Schubert)"
-          />
-        </div>
-        <div class="thats-me-div me-text">
-          <div id="dynamic-in" class="dynamic-i">
-            <!-- Beispiel: -->
-            <img
-              style="width: 800px"
-              src="../assets/images/cs gold.png"
-              alt=""
-            />
-          </div>
-          <p>
-            Herzlich Willkommen auf meiner Seite, mein Name ist Chris Schubert
-            und ich bin am 07.06.1994 geboren und lebe heute im schönes Potsdam.
-            Ich liebe es den ganzen Tag am rechner zu sitzen, probleme zu lösen
-            und mich damit gleichzeitig weiterzuentwickeln. Wenn ich mal keine
-            Lust auf's Programmieren habe, dann bleibt es Technisch und ich
-            fange an Charts zu analysieren. <br> Mit Kryptos, Finanzen und Gaming
-            kannst du mich immer catchen!
-          </p>
-        </div>
-        <div class="thats-me-div">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="thats-me-div skills">
-          <div class="skill-balken-js">
-            <span><i class="fab fa-js-square"></i> JavaScript</span>
-          </div>
-          <div class="skill-balken-react">
-            <span><i class="fab fa-react"></i> React</span>
-          </div>
-          <div class="skill-balken-angular">
-            <span><i class="fab fa-angular"></i> Angular</span>
-          </div>
-          <div class="skill-balken-ts">
-            <span><i class="fas fa-code"></i> TypeScript</span>
-          </div>
-          <div class="skill-balken-mdb">
-            <span><i class="fas fa-database"></i> MongoDB</span>
-          </div>
-          <div class="skill-balken-eng">
-            <span><i class="fas fa-language"></i> Englisch</span>
-          </div>
-          <div class="skill-balken-team">
-            <span><i class="fas fa-users"></i> Teamarbeit</span>
-          </div>
-          <div class="skill-balken-ta">
-            <span><i class="fas fa-chart-bar"></i> Technische Analyse</span>
-          </div>
-          <div class="skill-balken-bw">
-            <span><i class="fas fa-lock"></i> Blockchain-Wissen</span>
-          </div>
-          <div class="skill-balken-ch">
-            <span
-              ><i class="fas fa-desktop"></i> Technik Verständnis</span
-            >
-          </div>
-        </div>
-      </section>
-      <section id="kontakt" class="kontakt-section">
-        <div class="logo-contact">
-          <img src="../assets/images/cs gold.png" alt="Logo CS">
-        </div>
-        <form
-        class="kontakt-form"
-        action=""
-        method="POST"
-        >
-        <h2>Kontakt</h2>
-          <div class="form-group">
-            <label for="name">Dein Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Dein Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="nachname">Nachname:</label>
-            <input
-              type="text"
-              id="nachname"
-              name="nachname"
-              placeholder="Dein Nachname"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="Vorwahl">Telefon:</label>
-            <input type="text" id="Vorwahl" name="Vorwahl:" placeholder= "Mobil" />
-            <select id="Telefon" name="Telefon" required>
-              <option value="+49">+49 (Deutschland)</option>
-              <option value="+33">+33 (Frankreich)</option>
-              <option value="+44">+44 (UK)</option>
-              <option value="+39">+39 (Italien)</option>
-              <option value="+34">+34 (Spanien)</option>
-              <option value="+81">+81 (Japan)</option>
-              <option value="+86">+86 (China)</option>
-              <option value="+91">+91 (Indien)</option>
-              <option value="+61">+61 (Australien)</option>
-              <option value="+55">+55 (Brasilien)</option>
-              <option value="+7">+7 (Russland)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="email">E-Mail:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Deine E-Mail"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="betreff">Betreff:</label>
-            <input
-              type="text"
-              id="betreff"
-              name="betreff"
-              placeholder="Betreff"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="nachricht">Nachricht:</label>
-            <textarea
-              id="nachricht"
-              name="nachricht"
-              rows="5"
-              placeholder="Deine Nachricht"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn-senden">Senden</button>
-        </form>
-        <div class="abspann">
-          <p>
-            Ich freue mich auf deine Nachricht und werde mich so schnell wie
-            möglich bei dir melden.
-          </p>
-          <p>
-            Chris Schubert <br />
-            Potsdam, Deutschland
-          </p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:chris.schubert@dci-student.org?subject=Betreff&body=Hallo Chris,">chris.schubert@dci-student.org</a>
+      <div class="säulen-links">
+        <div class="Säule0-L"></div>
+        <div class="Säule1-L"></div>
+        <div class="Säule2-L"></div>
+        <div class="Säule3-L"></div>
+        <div class="Säule4-L"></div>
+        <div class="Säule5-L"></div>
+        <div class="Säule6-L"></div>
+        <div class="Säule7-L"></div>
+        <div class="Säule8-L"></div>
+        <div class="Säule9-L"></div>
+      </div>
+      <!-- ----------------------------------------------- -->
 
-          </p>
+      <div class="to-do" id="to-do-id">
+        <h2>To-Do Liste</h2>
+
+        <div class="Anzeige">
+          <label for="Eingabe">Eingabe</label>
+          <button id="hinzufügen"><i class="fas fa-plus"></i></button>
         </div>
+
+        <div>
+          <input type="text" id="Eingabe" />
+          <label for="Display">Display</label>
+          <input type="text" id="Display" disabled />
+        </div>
+
+        <div class="löschen-bearbeiten">
+          <button id="bearbeiten"><i class="fas fa-edit"></i></button>
+          <button id="löschen"><i class="fas fa-trash"></i></button>
+        </div>
+
+        </div>
+      <!-- ----------------------------------------------- -->
+      <div class="säulen-rechts">
+        <div class="Säule0-R"></div>
+        <div class="Säule1-R"></div>
+        <div class="Säule2-R"></div>
+        <div class="Säule3-R"></div>
+        <div class="Säule4-R"></div>
+        <div class="Säule5-R"></div>
+        <div class="Säule6-R"></div>
+        <div class="Säule7-R"></div>
+        <div class="Säule8-R"></div>
+        <div class="Säule9-R"></div>
+      </div>
+      <section class="Download">
+        <a href="./assets/Taschenrechner-Zip.zip" download>
+          <button id="download-btn">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </a>
       </section>
     </main>
 
@@ -301,6 +137,6 @@
       </div>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="./taschenrechner.js"></script>
   </body>
 </html>
