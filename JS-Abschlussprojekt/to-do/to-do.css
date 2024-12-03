@@ -8,6 +8,10 @@ main{
   margin-bottom: 250px;
 }
 
+h2{
+  animation: none;
+}
+
 .to-do {
   width: 400px;
   margin: 0 auto;
@@ -95,4 +99,6 @@ label {
   margin-top: 5px;
   font-size: 14px;
   color: var(--Text-accent1);
+  text-align: left;
+  font-family: Azonix-Style;
 }

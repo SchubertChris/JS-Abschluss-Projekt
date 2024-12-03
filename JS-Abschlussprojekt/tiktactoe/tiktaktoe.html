@@ -79,23 +79,27 @@
         <div class="Säule9-L"></div>
       </div>
       <!-- ----------------------------------------------- -->
-      <div class="tiktactoe-board"></div>
+      <div class="tiktactoe-board">
         <div class="row">
-          <div class="cell" data-cell></div>
-          <div class="cell" data-cell><i class="fa-regular fa-circle"></i></div>
-          <div class="cell" data-cell></div>
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
         </div>
         <div class="row">
-          <div class="cell" data-cell></div>
-          <div class="cell" data-cell></div>
-          <div class="cell" data-cell></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
         </div>
         <div class="row">
-          <div class="cell" data-cell></div>
-          <div class="cell" data-cell><i class="fa-solid fa-x"></i></div>
-          <div class="cell" data-cell></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
         </div>
-      </div>
+    </div>
+    <div class="display-container">
+        <div class="display"></div>
+        <div class="score">Player 1: 0 | Player 2: 0</div>
+    </div>
       <!-- ----------------------------------------------- -->
       <div class="säulen-rechts">
         <div class="Säule0-R"></div>
@@ -110,7 +114,7 @@
         <div class="Säule9-R"></div>
       </div>
       <section class="Download">
-        <a href="./assets/Taschenrechner-Zip.zip" download>
+        <a href="./assets/tictactoe" download>
           <button id="download-btn">
         <i class="fas fa-download"></i> Download
           </button>
@@ -135,7 +139,6 @@
         <p>© 2021 Chris Schubert</p>
       </div>
     </footer>
-
-    <script src="./taschenrechner.js"></script>
+    <script src="tiktactoe.js"></script>
   </body>
 </html>

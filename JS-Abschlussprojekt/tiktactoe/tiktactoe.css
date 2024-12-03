@@ -1,73 +1,141 @@
 @import url(../root.css);
-@import url(../calculator/taschenrechner.css);
+@import url(../style.css);
 
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 50px auto;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
 }
 
 .tiktactoe-board {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5px;
+    z-index: 2002;
+    position: relative;
 }
 
 .row {
-  display: flex;
+    display: flex;
+    gap: 5px;
 }
 
 .cell {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  background-color: #27272780;
-  border: 1px solid var(--Text-accent1);
-  align-items: center;
-  justify-content: center;
-  font-size: 10rem;
-  cursor: pointer;
-  border-radius: 10px;
-  text-align: center;
-  margin: 5px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: #27272780;
+    border: 2px solid var(--Text-accent1);
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
-.cell[data-cell]:hover {
-  background-color: #10101000;
-  color: var(--Text-accent1);
-  border: 2px solid red;
-  z-index: 1001;
-  box-shadow: inset red 0px 0px 10px 0px;
+.cell::before {
+    content: attr(data-hover-symbol);
+    position: absolute;
+    color: var(--Text-accent1);
+    font-size: 8rem;
+    font-family: Azonix-Style;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-
-.säulen-links{
-  margin: 100px 0;
-  display: flex;
-  flex-direction: row;
+.cell:not(.filled):hover::before {
+    opacity: 1;
 }
 
-.säulen-rechts{
-  margin-top: 100px;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: row;
+.cell.filled {
+    cursor: not-allowed;
+    border: 1px solid red;
 }
 
-.cell i.fa-regular.fa-circle {
-  color: orange;
-  &:hover{
-    color: red;
-  }
+.cell i {
+    font-size: 8rem;
+    transition: color 0.3s;
 }
 
-.cell i.fa-solid.fa-x {
-  color: yellowgreen;
-  &:hover{
-    color: red;
-  }
+.cell i.fa-circle {
+    color: orange;
+    text-shadow: 0 0 10px orange;
 }
+
+.cell i.fa-x {
+    color: yellowgreen;
+    text-shadow: 0 0 10px yellowgreen;
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    font-family: Azonix-Style;
+    font-size: 1rem;
+    color: var(--Text-accent1);
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 1.2rem;
+    color: var(--Text-accent1);
+}
+
+.winning-line {
+    position: absolute;
+    height: 1px;
+    background-color: rgb(92, 250, 0);
+    z-index: 10;
+    transform-origin: left center;
+}
+
+.cell.winning-cell {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+/* SÄULEN-------------------------------------- */
+.säulen-links {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.säulen-rechts {
+    margin-top: 100px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    background-color: var(--Text-accent1);
+    color: var(--Text-accent2);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: var(--BG-Dark);
+        color: var(--Text-accent1);
+    }}
