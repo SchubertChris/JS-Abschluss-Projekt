@@ -79,25 +79,14 @@
         <div class="Säule9-L"></div>
       </div>
       <!-- ----------------------------------------------- -->
-
-      <div class="to-do" id="to-do-id">
-        <h2>To-Do Liste</h2>
-
-        <div class="Anzeige">
-          <label for="Eingabe">Deine To-Do's</label>
+      <section class="to-do-app">
+        <h2>To-Do List</h2>
+        <div class="input-container">
+          <input type="text" id="new-task" placeholder="Was hast du zu erledigen?" />
+          <button id="add-task-btn"><i class="fas fa-plus"></i></button>
         </div>
-
-        <div>
-          <input type="text" id="Eingabe" />
-          <label for="Display">Display</label>
-          <input type="text" id="Display" disabled />
-        </div>
-
-        <div class="löschen-bearbeiten">
-          <button id="bearbeiten"><i class="fas fa-edit"></i></button>
-          <button id="löschen"><i class="fas fa-trash"></i></button>
-        </div>
-        </div>
+        <ul id="task-list"></ul>
+      </section>
       <!-- ----------------------------------------------- -->
       <div class="säulen-rechts">
         <div class="Säule0-R"></div>
@@ -138,6 +127,6 @@
       </div>
     </footer>
 
-    <script src="./taschenrechner.js"></script>
+    <script src="./to-do.js"></script>
   </body>
 </html>

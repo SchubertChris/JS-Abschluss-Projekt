@@ -1,16 +1,5 @@
 @import url(./root.css);
 /* Chris Schubert (Links Oben 'LOGO') */
-h1 {
-  width: 150px;
-  position: absolute;
-  top: 2%;
-  font-size: 3rem;
-  color: silver;
-  padding: 10px;
-  border-radius: 5px;
-  animation: slide-right-and-left 20s infinite linear;
-  -webkit-text-stroke: 1px rgb(22, 22, 22);
-}
 
 @keyframes slide-right-and-left {
   10% {
@@ -155,8 +144,9 @@ main {
   color: var(--Text-accent1);
   text-decoration: overline 1px gold;
 }
+/* --------------------------------------------------- */
 
-
+/* --------------------------------------------------- */
 /* THATS ME SECTION */
 
 .thats-me {
@@ -165,19 +155,17 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: end;
+  #meIMG{
+    height: 1000px;
+    opacity: 0.8;
+    box-shadow: 0 0 20px 2px rgba(0, 247, 255, 0.9);
+  }
   div {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    p {
-      width: 700px;
-      text-align: right;
-    }
-    ul {
-      list-style: none;
-    }
+    align-items: center;
   }
 }
 
@@ -229,7 +217,7 @@ main {
   grid-area: 2 / 1 / 13 / 2;
 }
 .me-text {
-  grid-area: 10 / 2 / 13 / 5;
+  grid-area: 5 / 2 / 13 / 5;
 }
 .dynamic-i {
   grid-area: 2 / 2 / 10 / 5;
@@ -311,8 +299,10 @@ main {
 .skill-balken-bw span:active i {
   text-shadow: 0 0 10px rgba(96, 255, 242, 0.5),
     0 0 20px rgba(96, 255, 242, 0.5), 0 0 30px rgba(96, 255, 242, 0.5);
-}
-
+  }
+  /* --------------------------------------------------- */
+  /* ---------------------THATS-ME-END------------------ */
+  /* --------------------------------------------------- */
 .kontakt-section {
   border-bottom: 1px solid rgba(218, 165, 32, 0.515);
   border-top: 1px solid rgba(218, 165, 32, 0.515);
@@ -342,25 +332,6 @@ h2 {
   width: 300px;
   font-family: Azonix-Style;
   animation: tilt-and-fall 3s both ease-out;
-}
-
-@keyframes tilt-and-fall {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  50% {
-    transform: rotate(90deg);
-  }
-  75% {
-    transform: rotate(180deg);
-    text-shadow: 1px 1px 10px rgb(96, 255, 242);
-    transform: translateY(10px);
-  }
-  100% {
-    transform: rotate(-5deg);
-    text-shadow: 1px 1px 10px rgb(96, 255, 242);
-  }
 }
 
 .logo-contact img {
@@ -466,16 +437,15 @@ h2 {
 }
 
 .animated-logo {
+  position: static;
   display: grid;
-  margin: 0 auto;
-  width: 50%;
-  margin-bottom: 70px;
+  margin: 0 auto 200px auto;
+  width: 30%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-  border: 1px solid rgba(218, 165, 32, 0.603);
+  background: linear-gradient(135deg, #2c2c2c33, #1a1a1a2c);
   border-radius: 10px;
-  box-shadow: inset 0 0 600px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 600px 50px rgba(0, 0, 0, 0.156);
 }
 
 .animated-logo img:nth-child(1) {
@@ -521,6 +491,42 @@ h2 {
 .animated-logo img:nth-child(9) {
   grid-area: 3 / 3;
   width: 100%;
+}
+
+.animated-logo img:nth-child(1) {
+  animation: fly-in 1s ease-out forwards;
+}
+
+.animated-logo img:nth-child(2) {
+  animation: fly-in-arc-1 1.2s ease-out forwards;
+}
+
+.animated-logo img:nth-child(3) {
+  animation: fly-in-arc-3 1.4s ease-out forwards;
+}
+
+.animated-logo img:nth-child(4) {
+  animation: fly-in-arc-1 1.6s ease-out forwards;
+}
+
+.animated-logo img:nth-child(5) {
+  animation: fly-in-arc-4 1.8s ease-out forwards;
+}
+
+.animated-logo img:nth-child(6) {
+  animation: fly-in-arc-2 2s ease-out forwards;
+}
+
+.animated-logo img:nth-child(7) {
+  animation: fly-in-arc-5 2.2s ease-out forwards;
+}
+
+.animated-logo img:nth-child(8) {
+  animation: fly-in-arc-1 2.4s ease-out forwards;
+}
+
+.animated-logo img:nth-child(9) {
+  animation: fly-in-arc-2 2.6s ease-out forwards;
 }
 
 @keyframes fly-in {
@@ -575,38 +581,21 @@ h2 {
     transform: translateX(0) translateY(0) rotate(360deg);
   }
 }
-.animated-logo img:nth-child(1) {
-  animation: fly-in 1s ease-out forwards;
-}
-
-.animated-logo img:nth-child(2) {
-  animation: fly-in-arc-1 1.2s ease-out forwards;
-}
-
-.animated-logo img:nth-child(3) {
-  animation: fly-in-arc-3 1.4s ease-out forwards;
-}
-
-.animated-logo img:nth-child(4) {
-  animation: fly-in-arc-1 1.6s ease-out forwards;
-}
-
-.animated-logo img:nth-child(5) {
-  animation: fly-in-arc-4 1.8s ease-out forwards;
-}
-
-.animated-logo img:nth-child(6) {
-  animation: fly-in-arc-2 2s ease-out forwards;
-}
-
-.animated-logo img:nth-child(7) {
-  animation: fly-in-arc-5 2.2s ease-out forwards;
-}
-
-.animated-logo img:nth-child(8) {
-  animation: fly-in-arc-1 2.4s ease-out forwards;
-}
-
-.animated-logo img:nth-child(9) {
-  animation: fly-in-arc-2 2.6s ease-out forwards;
+@keyframes tilt-and-fall {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(180deg);
+    text-shadow: 1px 1px 10px rgb(96, 255, 242);
+    transform: translateY(10px);
+  }
+  100% {
+    transform: rotate(-5deg);
+    text-shadow: 1px 1px 10px rgb(96, 255, 242);
+  }
 }

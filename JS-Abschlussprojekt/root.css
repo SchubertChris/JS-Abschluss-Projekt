@@ -283,7 +283,6 @@ body::-webkit-scrollbar-thumb:hover {
     top: 6%;
     left: 10%;
   }
-
   nav {
     animation: none;
     z-index: 1111;
@@ -334,17 +333,25 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 1005;
     right: 0; /* Navigation ins Bild schieben */
   }
-
   nav ul li {
     margin: 20px 0;
   }
 }
-
 #projects {
+  min-height: 150vh;
+  .Project{
+    min-width: 400px;
+    font-size: 1px;
+    width: 100%;
+    img{
+      width: 50px;
+      height: 50px;
+    }
+  }
+  flex-direction: column;
   h4 {
     font-size: 1.2rem;
   }
-  flex-direction: column;
   .Project-inner {
     font-size: 0.7rem;
   }
@@ -426,7 +433,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 .Project {
-  max-width: 600px;
+  max-width: 500px;
 }
 .Project-Bar {
   flex-direction: row;

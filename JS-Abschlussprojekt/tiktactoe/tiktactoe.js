@@ -143,3 +143,28 @@ function updateHoverSymbols() {
 
 // Startet das Spiel, wenn die Seite geladen wird
 document.addEventListener('DOMContentLoaded', initializeGame);
+
+
+
+/* 
+PSEUDOCODE:
+
+Spielzustandsvariablen
+- Symbol für Spieler 1
+- Symbol für Spieler 2
+- Aktiver Spieler
+- Zustand des Spielfelds
+- Punktestand Spieler 1
+- Punktestand Spieler 2
+
+Gewinnkombinationen
+- Reihen
+- Spalten
+- Diagonalen
+
+DOM-Elemente
+- Spielfeldzellen
+- Anzeige für Nachrichten
+- Anzeige für Punktestand
+- Spielfeld
+*/
