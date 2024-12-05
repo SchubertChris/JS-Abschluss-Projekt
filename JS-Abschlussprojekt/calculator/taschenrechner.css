@@ -1,6 +1,13 @@
 @import url(../root.css);
 @import url(../style.css);
 
+main{
+  background-color: rgba(0, 0, 0, 0.784);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0;
+}
+
 .Taschenrechner {
   width: 400px;
   margin: 0px auto;
@@ -8,6 +15,8 @@
   border: 1px solid;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--Text-accent1);
+  background-color: rgba(0, 0, 0, 0.784);
+  z-index: 999;
 }
 
 #display {
@@ -198,32 +207,4 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-#download-btn {
-  width: 200px;
-  height: 50px;
-  color: black;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-family: Azonix-Style;
-  background-color: white;
-}
-
-#download-btn:hover {
-  background-color: var(--Text-primary);
-  color: black;
-}
-
-#download-btn:active {
-  background-color: var(--BGDark);
-  box-shadow: 0 0 10px var(--Text-accent1);
-  transform: scale(1.1);
-  color: white;
-}
-
-#download-btn:active i {
-  color:greenyellow;
 }

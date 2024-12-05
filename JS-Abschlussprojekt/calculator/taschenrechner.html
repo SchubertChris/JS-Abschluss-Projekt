@@ -22,25 +22,24 @@
       <a href="/index.html">
         <img src="../assets/images/cs gold.png" alt="Logo CS" />
       </a>
-      <h1 id="logo">CS</h1>
-      <button style="display: none" id="hamburger-menu" aria-label="Menu">
+      <button id="hamburger-menu" aria-label="Menu">
         <i class="fas fa-bars"></i>
       </button>
       <nav>
         <ul>
           <li>
-            <a href="../index.html#me"
+            <a href="/index.html#me"
               ><i id="nav-icons" class="fas fa-user"></i> That's me</a
             >
           </li>
           <li>
-            <a href="../index.html#projects"
+            <a href="/index.html#projects"
               ><i id="nav-icons" class="fas fa-project-diagram"></i> Projects</a
             >
             <!-- Download einbinden (Gesamtes Project als Zip Hinterlegen) -->
             <ul>
               <li>
-                <a href="../to-do/to-do.html#to-do-liste"
+                <a href="../to-do/to-do.html"
                   ><i class="fas fa-tasks"></i> To-Do Liste</a
                 >
               </li>
@@ -64,6 +63,7 @@
         </ul>
       </nav>
     </header>
+    <hr>
     <!-- MAIN -->
     <main>
       <div class="säulen-links">
@@ -79,6 +79,7 @@
         <div class="Säule9-L"></div>
       </div>
       <!-- ----------------------------------------------- -->
+       <section id="calculator-section">
       <div class="Taschenrechner" id="calculator">
         <input type="text" id="display" disabled />
         <div class="buttons">
@@ -106,7 +107,9 @@
           <button class="button" data-value=".">.</button>
           <button class="button" data-value="=" id="equals">=</button>
         </div>
+        <input style="opacity: 0;" type="text" autofocus>
       </div>
+    </section>
       <!-- ----------------------------------------------- -->
       <div class="säulen-rechts">
         <div class="Säule0-R"></div>
@@ -142,9 +145,7 @@
           ><i id="SM-btn-FB" class="fab fa-facebook"></i
         ></a>
       </div>
-      <div class="copyright">
-        <p>© 2021 Chris Schubert</p>
-      </div>
+
     </footer>
 
     <script src="./taschenrechner.js"></script>

@@ -6,10 +6,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.784);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .tiktactoe-board {
+    width: 100%;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +32,7 @@ main {
 
 .cell {
     display: flex;
-    width: 150px;
+    width: 130px;
     height: 150px;
     background-color: #27272780;
     border: 2px solid var(--Text-accent1);
@@ -127,8 +132,8 @@ main {
 }
 
 button{
-    background-color: var(--Text-accent1);
-    color: var(--Text-accent2);
+    background-color: #27272780;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;

@@ -5,19 +5,12 @@
 main{
   width: 100%;
   height: 100vh;
-  margin-bottom: 250px;
-}
-#download-btn:hover{
-  color: white;
-}
-
-button{
-  cursor: pointer;
-  width: 100px;
+  margin: 0 auto;
+  border-radius: 0px;
 }
 
 h2{
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   animation: none;
   text-shadow: 0pc 0px 10px var(--Text-accent1);
 }
@@ -28,10 +21,12 @@ h2{
 
 .to-do-app {
   width: 100%;
-  height: 400px;
-  margin: 0 auto;
+  max-width: 600px;
+  height: auto;
+  margin: 100px auto;
   padding: 20px;
-  background-color: var(--BG-Dark);
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -41,15 +36,17 @@ h2{
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  margin: 0 auto;
-  width: 50%;
+  width: 100%;
 }
 
 #new-task {
   flex: 1;
-  padding: 15px; /* Increased padding */
+  padding: 15px;
   border-radius: 5px;
-  font-size: 16px; /* Increased font size */
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  color: white !important;
+  border: 1px solid #ccc;
 }
 
 #add-task-btn {
@@ -60,11 +57,14 @@ h2{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px; /* Increased font size */
-  &:hover{
-    background-color: var(--BG-Dark);
-    color: var(--Text-accent1);
-  }
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#add-task-btn:hover {
+  background-color: var(--BG-Dark);
+  color: var(--Text-accent1);
 }
 
 #add-task-btn i {
@@ -75,22 +75,24 @@ h2{
   list-style-type: none;
   padding: 0;
   font-family: Azonix-Style;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #task-list li {
-  width: 50%;
+  width: 100%;
   padding: 10px;
   border-bottom: 1px solid #ccc;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
 
 #task-list li button {
-  position: relative;
-  right: 0;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 #task-list li:last-child {
