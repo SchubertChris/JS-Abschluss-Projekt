@@ -21,7 +21,7 @@ main {
     justify-content: center;
     margin: 0 auto;
     gap: 5px;
-    z-index: 2002;
+    z-index: 1002;
     position: relative;
 }
 
@@ -144,3 +144,7 @@ button{
         background-color: var(--BG-Dark);
         color: var(--Text-accent1);
     }}
+    @media (max-width: 1200px) {
+        nav ul ul {
+        display: none !important;
+        }}

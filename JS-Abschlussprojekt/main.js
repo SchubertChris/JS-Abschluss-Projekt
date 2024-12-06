@@ -36,10 +36,10 @@ const skillVideos = {
   "skill-balken-angular": "https://www.youtube.com/embed/w1AXPd7gIvU?autoplay=1",
   "skill-balken-ts": "https://www.youtube.com/embed/tA1N4V0HnLI?autoplay=1",
   "skill-balken-mdb": "https://www.youtube.com/embed/jpTNn4zkMKY?autoplay=1",
-  "skill-balken-eng": "https://www.youtube.com/embed/RqVR0Ls8QbY?autoplay=1",
+  "skill-balken-eng": "https://www.youtube.com/embed/Q3l2ygTf-nI?autoplay=1",
   "skill-balken-team": "https://www.youtube.com/embed/ahM00W0Hwsc?autoplay=1",
   "skill-balken-ta": "https://www.youtube.com/embed/LqQ_J8JbIpo?autoplay=1",
-  "skill-balken-bw": "https://www.youtube.com/embed/cfkYr0sHowI&t=37s?autoplay=1",
+  "skill-balken-bw": "https://www.youtube.com/embed/Kn0aiUuvZ9g?autoplay=1",
   "skill-balken-ch": "https://www.youtube.com/embed/nEkMTwr-f0I?autoplay=1"
 };
 

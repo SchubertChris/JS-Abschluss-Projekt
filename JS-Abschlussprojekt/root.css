@@ -363,9 +363,6 @@ footer {
       }
   }
   }
-  .thats-me-div img {
-    display: none !important;
-  }
   #kontakt {
     margin-bottom: 250px;
     img{
@@ -382,7 +379,8 @@ footer {
         transform: scale(1.1);
         color: wheat;
       }
-    }  }
+    }
+  } 
 
 
 /* ---------------------------------------------------------Medium */
@@ -415,7 +413,7 @@ footer {
   }
   nav {
     animation: none;
-    z-index: 1111;
+    z-index: 2111;
   }
   nav ul {
     position: fixed;
@@ -434,7 +432,7 @@ footer {
       width: 100%;
     }
     #sec-ul {
-      display: none;
+      display: none !important;
       flex-direction: column;
       justify-content: space-around;
       position: relative;
@@ -461,9 +459,13 @@ footer {
   }
 }
 #kontakt {
+  width: 100%;
   margin-bottom: 250px;
+  form{
+  padding: 3rem;
+  }
   img{
-    display: block !important;
+    display: none !important;
   }
   p{
     display: none !important;
@@ -471,6 +473,7 @@ footer {
   nav{
     animation: none;
   }
+  
 }
 
 
@@ -483,8 +486,6 @@ footer {
   max-width: 600px;
 }
 }
-
-
 /* ----------------------------------------------KEYFRAMES */
 
 
@@ -581,32 +582,3 @@ footer {
     opacity: 1;
   }
 }
-
-
-
-
-/* 
-
-https://www.youtube.com/watch?v=eWLDAAMsD-c (JS)
-https://www.youtube.com/watch?v=tA1N4V0HnLI (TSC)
-https://www.youtube.com/watch?v=jpTNn4zkMKY (MDB)
-https://www.youtube.com/watch?v=w1AXPd7gIvU (NG)
-https://www.youtube.com/watch?v=qJqjcxLvEwg (R)
-https://www.youtube.com/watch?v=cfkYr0sHowI&t=37s (Was ist Bitcoin (Blockchain)
-https://www.youtube.com/watch?v=LqQ_J8JbIpo (Fib (Technische Analyse))
-https://www.youtube.com/watch?v=nEkMTwr-f0I (Technik)
-https://www.youtube.com/watch?v=ahM00W0Hwsc (TEAM)
-https://www.youtube.com/watch?v=RqVR0Ls8QbY (ENGLISCH)
-
-skill-balken-js
-skill-balken-react
-skill-balken-angular
-skill-balken-ts
-skill-balken-mdb
-skill-balken-eng
-skill-balken-team
-skill-balken-ta
-skill-balken-bw
-skill-balken-ch"
-
-*/

@@ -118,7 +118,7 @@ main {
 .--Project1:hover,
 .--Project2:hover,
 .--Project3:hover {
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+  background: radial-gradient(circle, rgba(64, 64, 64, 0.6), rgba(0, 0, 0, 0.8));
   z-index: 1001;
   border-radius: 50% !important;
   text-align: center;
@@ -171,28 +171,39 @@ main {
 
 #me {
   width: 90%;
+  height: 100vh;
   margin: 0 auto;
   border-top: 1px solid rgba(218, 165, 32, 0.49);
   border-bottom: 1px solid rgba(218, 165, 32, 0.521);
   background: url(../JS-Abschlussprojekt/assets/images/hin3.jpg)
   no-repeat center center/cover;
-  position: relative;
   box-shadow: inset 0 0 600px 50px rgba(0, 0, 0, 0.9);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   .dynamic-i{
-    max-width: 1500px;
-    height: 500px;
+    aspect-ratio: 14/9;
+    max-width: 1000px;
+    min-height: 300px;
     font-size: 2rem;
     color: goldenrod;
     border: 1px solid goldenrod;
     margin-bottom: 1rem;
+    border-radius: 5px;
+    margin-left: 50px;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
   }
   .skills div {
-    width: 400px;
+    width: 10px;
+    max-width: 350px;
+    min-width: 100px;
     z-index: 1001;
     padding: 1rem;
+    margin-left: 150px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 35px;
     border: 1px solid rgba(245, 222, 179, 0);
@@ -214,8 +225,6 @@ main {
     }
   }
 }
-
-
 
 .skill div span {
   font-size: .85rem;
@@ -462,3 +471,114 @@ main {
 .animated-logo img:nth-child(9) {
   animation: fly-in-arc-2 2.6s ease-out forwards;
 }
+
+@media screen and (max-width: 768px) {
+  #me {
+    display: flex;
+    min-height: 150vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    .dynamic-i {
+      max-width: 380px;
+      margin: 0 auto; /* Center the dynamic element */
+    }
+    .thats-me-div.skills {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .skill-balken-js,
+      .skill-balken-react,
+      .skill-balken-angular,
+      .skill-balken-ts,
+      .skill-balken-mdb,
+      .skill-balken-eng,
+      .skill-balken-team,
+      .skill-balken-ta,
+      .skill-balken-bw,
+      .skill-balken-ch {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 787px) {
+  #me {
+    display: flex;
+    min-height: 150vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    .dynamic-i {
+      width: 540px;
+      margin: 0 auto; /* Center the dynamic element */
+    }
+    .thats-me-div.skills {
+      padding: 0rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .skill-balken-js,
+      .skill-balken-react,
+      .skill-balken-angular,
+      .skill-balken-ts,
+      .skill-balken-mdb,
+      .skill-balken-eng,
+      .skill-balken-team,
+      .skill-balken-ta,
+      .skill-balken-bw,
+      .skill-balken-ch {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  #me {
+    display: flex;
+    min-height: 150vh;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    .dynamic-i {
+      width: 1260px;
+      margin-left: 200px;
+    }
+    .thats-me-div.skills {
+      padding: 0rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .skill-balken-js,
+      .skill-balken-react,
+      .skill-balken-angular,
+      .skill-balken-ts,
+      .skill-balken-mdb,
+      .skill-balken-eng,
+      .skill-balken-team,
+      .skill-balken-ta,
+      .skill-balken-bw,
+      .skill-balken-ch {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  nav ul ul {
+  display: none !important;
+  }}

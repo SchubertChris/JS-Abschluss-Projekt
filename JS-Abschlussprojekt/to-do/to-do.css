@@ -98,3 +98,7 @@ h2{
 #task-list li:last-child {
   border-bottom: none;
 }
+@media (max-width: 1200px) {
+  nav ul ul {
+  display: none !important;
+  }}

@@ -34,3 +34,7 @@
   box-shadow: 0 0 10px var(--Text-accent1);
   border-radius: 20px;
 }
+@media (max-width: 1200px) {
+  nav ul ul {
+  display: none !important;
+  }}

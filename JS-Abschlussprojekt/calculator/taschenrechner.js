@@ -1,3 +1,8 @@
+
+
+
+// Importiere andere JavaScript-Dateien
+
 // Hier erstelle ich Variablen, die die Buttons und das Display des Taschenrechners speichern.
 const buttons = document.querySelectorAll(".button");
 const display = document.getElementById("display");
