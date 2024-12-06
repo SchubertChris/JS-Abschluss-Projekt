@@ -38,7 +38,7 @@ Eine klare und intuitive Struktur:
 1. **Repository klonen**:
 
    ```bash
-   git clone <REPOSITORY_URL>
+   git clone git@github.com:SchubertChris/JS-Abschluss-Projekt.git
    cd JS-Abschlussprojekt
  
 2. **Abhängigkeiten Installieren**:
@@ -58,23 +58,31 @@ Eine klare und intuitive Struktur:
         ├── 📄 index.html  
         ├── 📁 JS-Abschlussprojekt  
         │   ├── 📁 assets  
+        │   │   ├── 📁 images  
         │   │   ├── 📁 fonts  
         │   │   │   ├── 📁 Azonix  
         │   │   │   ├── 📁 Kanit  
         │   │   │   ├── 📁 Teko  
-        │   │   │   ├── 📁 digital  
-        │   │   │   ├── 📁 lunery  
-        │   │   ├── 📁 images  
         │   │   │   ├── 📁 imageonline  
         │   ├── 📁 calculator  
         │   │   ├── 📁 assets  
+        │   |   │   ├── 📄 taschenrechner.html 
+        │   |   │   ├── 📄 taschenrechner.js 
+        │   |   │   ├── 📄 taschenrechner.zip 
+        │   |   │   ├── 📄 taschenrechner.css 
         │   ├── 📁 tiktactoe  
         │   │   ├── 📁 assets  
+        │   |   │   ├── 📄 tictaktoe.html 
+        │   |   │   ├── 📄 tictaktoe.js 
+        │   |   │   ├── 📄 tictaktoe.css 
+        │   |   │   ├── 📄 tiktactoe.zip 
         │   ├── 📁 to-do  
         │   │   ├── 📁 assets  
-        ├── 📁 node_modules  
-        │   ├── 📁 .bin  
-        │   ├── 📁 readline-sync  
+        │   |   │   ├── 📄 to-do.html 
+        │   |   │   ├── 📄 to-do.js 
+        │   |   │   ├── 📄 to-do.css 
+        │   |   │   ├── 📄 to-do.zip
+
         ├── 📄 README.md  
 
 
