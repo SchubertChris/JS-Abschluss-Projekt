@@ -1,15 +1,11 @@
 
-
-
-// Importiere andere JavaScript-Dateien
-
-// Hier erstelle ich Variablen, die die Buttons und das Display des Taschenrechners speichern.
 const buttons = document.querySelectorAll(".button");
 const display = document.getElementById("display");
 
-let currentValue = ""; // Aktueller Wert (wird angezeigt)
-let storedValue = ""; // Zwischenspeicher für Berechnungen
-let operator = ""; // Speichert den gewählten Operator
+// Variablen für die Berechnung
+let currentValue = ""; 
+let storedValue = ""; 
+let operator = ""; 
 
 // Eventlistener (Click für jeden Button)
 buttons.forEach((button) => {
@@ -21,20 +17,17 @@ buttons.forEach((button) => {
       currentValue = "";
       storedValue = "";
       operator = "";
-      display.value = "0"; // Anzeige zurücksetzen
+      display.value = "0"; // Anzeige zurücksetzen wenn null setze nicht zurück
     }
-    // Überprüfen, ob ein Operator gedrückt wurde
     else if (["+", "-", "*", "/"].includes(value)) {
       if (currentValue) {
-        storedValue = currentValue; // Aktuellen Wert speichern
-        operator = value; // Operator setzen
-        currentValue = ""; // Anzeige zurücksetzen
+        storedValue = currentValue; 
+        operator = value; 
+        currentValue = "";
       }
     }
-    // Modus für "%" - Prozentsatz berechnen
     else if (value === "%") {
       if (currentValue) {
-        // Berechne Prozentsatz (z.B. 20% von 200)
         currentValue = String(parseFloat(currentValue) / 100);
         display.value = currentValue; // Ergebnis anzeigen
       }

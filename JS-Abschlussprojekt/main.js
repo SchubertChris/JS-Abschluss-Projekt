@@ -6,6 +6,10 @@
 2. Logo mit Home-Button verknüpfen (LINK)
 3. Drop-Down-Menü erstellen
   - Drop-Down-Menü mit den Unterkategorien verknüpfen (LINK)
+4. Drop-Down-Menü ein- und ausblenden
+  - Drop-Down-Menü einblenden, wenn auf das Logo geklickt wird
+  - Drop-Down-Menü ausblenden, wenn auf das Logo geklickt wird, während das Drop-Down-Menü sichtbar ist
+5. Drop-Down-Menü ausblenden, wenn auf einen Link im Drop-Down-Menü geklickt wird
 */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,6 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/* SKILL BEREICH / Videos/BTns */
+/* Pseudocode */
+/* 1. Skills auswählen
+2. Video-URLs für die Skills definieren
+3. Eventlistener für die Skills hinzufügen
+4. Wenn ein Skill geklickt wird, entferne die Klasse "active" von allen Skills
+*/
+
 // Videos für die entsprechenden Skills
 const skillVideos = {
   "skill-balken-js": "https://www.youtube.com/embed/eWLDAAMsD-c?autoplay=1",
@@ -43,19 +55,13 @@ const skillVideos = {
   "skill-balken-ch": "https://www.youtube.com/embed/nEkMTwr-f0I?autoplay=1"
 };
 
-// Selektiere alle Skill-Balken
 const skillBalken = document.querySelectorAll(".thats-me-div.skills > div");
-
-// Selektiere den Bereich, wo das Video angezeigt wird
 const dynamicIn = document.getElementById("dynamic-in");
 
-// Funktion für das Click-Event
 skillBalken.forEach((balken) => {
   balken.addEventListener("click", function () {
-    // Entferne den "active"-Status von allen Balken
     skillBalken.forEach((b) => b.classList.remove("active"));
-
-    // Füge dem aktuellen Balken die "active"-Klasse hinzu
+// b. kann auch als balken geschrieben werden, ist nur kürzer	er erkennt, dass es sich um das gleiche handelt
     this.classList.add("active");
 
     // Hole die passende Video-URL
@@ -76,3 +82,45 @@ skillBalken.forEach((balken) => {
 });
 
 
+/* Kontaktformular */
+/* const express = require('express');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+const app = express();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.post('/send-email', async (req, res) => {
+  const { name, nachname, Vorwahl, Telefon, email, betreff, nachricht } = req.body;
+
+  // Konfiguriere deinen E-Mail-Transporter
+  const transporter = nodemailer.createTransport({
+    service: 'gmail', // Gmail-Beispiel
+    auth: {
+      user: 'schubert_chris@rocketmail.com', // Ersetze mit deiner E-Mail-Adresse
+      pass: process.env.EMAIL_PASSWORD // Passwort aus Umgebungsvariablen
+    }
+  });
+
+  const mailOptions = {
+    from: email,
+    to: 'schubert_chris@rocketmail.com', // Zieladresse
+    subject: `${betreff}`,
+    text: `Name: ${name} ${nachname}\nTelefon: ${Vorwahl} ${Telefon}\nNachricht: ${nachricht}`
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    res.status(200).send('E-Mail wurde erfolgreich gesendet!');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Fehler beim Versenden der E-Mail.');
+  }
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server läuft auf Port ${PORT}`);
+});
+ */
